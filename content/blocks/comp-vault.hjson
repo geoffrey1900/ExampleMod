@@ -1,9 +1,9 @@
 name: Compresser Vault
 description: Compresses items to a few atoms!.
 type: Vault
-itemCapacity: 10000
+itemCapacity: 3000
 hasItems: true
-health: 200
+health: 550
 size: 1
 requirements: [
   electrum/20
