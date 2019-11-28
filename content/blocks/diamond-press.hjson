@@ -16,7 +16,7 @@ consumes: {
     ]
   }
   liquid: {
-    liquid: cyrofluid
+    liquid: cyro-fluid
     amount: 0.5
   }
 }
