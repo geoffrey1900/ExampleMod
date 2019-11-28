@@ -1,14 +1,16 @@
-name: Electrum Vault
-description: Shocking way of storing items.
+name: Compresser Vault
+description: Compresses items to a few atoms!.
 type: Vault
-itemCapacity: 2500
+itemCapacity: 10000
 hasItems: true
-health: 2000
-size: 3
+health: 200
+size: 1
 requirements: [
   electrum/20
   titanium/60
   thorium/40
+  silicon/20
+  silver/10
 ]
 category: effect
 research: vault
