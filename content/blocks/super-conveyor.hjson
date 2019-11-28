@@ -10,5 +10,5 @@ requirements: [
   silicon/2
 ]
 category: distribution
-speed: 2.5
+speed: 1000.0
 research: titanium-conveyor
