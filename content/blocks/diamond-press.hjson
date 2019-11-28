@@ -1,0 +1,34 @@
+type: GenericSmelter
+name: Diamond Press
+description: Compresses coal int diamonds.
+liquidCapacity: 50
+size: 3
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 75
+updateEffect: smeltsmoke
+consumes: {
+  power: 1.3
+  items: {
+    items: [
+      coal/5
+    ]
+  }
+  liquid: {
+    liquid: cyrofluid
+    amount: 0.5
+  }
+}
+requirements: [
+  lead/30
+  thorium/90
+  silicon/20
+  silver/120
+  titanium/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: diamond/1
