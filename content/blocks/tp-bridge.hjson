@@ -1,6 +1,6 @@
 type: ItemBridge
 name: Teleporter
-description: "r/wooosh"
+description: "oh no, not r/wooosh"
 requirements: [
   titanium/15
   copper/10
@@ -10,5 +10,5 @@ requirements: [
   silicon/15
 ]
 category: distribution
-range: 100
-transportTime: 0.0
+range: 200
+transportTime: 0.01
