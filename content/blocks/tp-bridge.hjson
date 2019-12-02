@@ -1,0 +1,14 @@
+type: ItemBridge
+name: Teleporter
+description: "r/wooosh"
+requirements: [
+  titanium/15
+  copper/10
+  lead/5
+  electrum/30
+  silver/15
+  silicon/15
+]
+category: distribution
+range: 100
+transportTime: 0.0
