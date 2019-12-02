@@ -1,3 +1,9 @@
 name: Silver Plating
 type: Floor
 variants: 0
+category: upgrade
+requirements: [
+  silver/50
+  silicon/60
+  graphite/25
+]
