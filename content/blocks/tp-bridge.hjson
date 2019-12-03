@@ -1,6 +1,6 @@
 type: ItemBridge
 name: Teleporter
-description: "oh no, not r/wooosh"
+description: "oh no, not oh no"
 requirements: [
   titanium/15
   copper/10
@@ -8,6 +8,7 @@ requirements: [
   electrum/30
   silver/15
   silicon/15
+  diamond/10
 ]
 category: distribution
 range: 200
