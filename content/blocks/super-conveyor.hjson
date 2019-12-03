@@ -8,7 +8,8 @@ requirements: [
   electrum/10
   silver/5
   silicon/2
+  diamond/2
 ]
 category: distribution
 speed: 1000.0
-research: titanium-conveyor
+research: electrum-conveyor
