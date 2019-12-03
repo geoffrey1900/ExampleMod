@@ -1,0 +1,13 @@
+type: ArmoredConveyor
+name: Armored Floating conveyor
+description: The ironclad conveyors!
+requirements: [
+  titanium/1
+  copper/3
+  metaglass/1
+  silicon/3
+]
+category: distribution
+speed: 0.10
+research: titanium-conveyor
+floating: true
