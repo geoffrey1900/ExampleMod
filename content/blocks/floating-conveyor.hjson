@@ -2,12 +2,11 @@ type: Conveyor
 name: Floating conveyor
 description: Now with air bags!
 requirements: [
-  titanium/3
-  copper/3
-  lead/4
-  electrum/10
-  silver/5
-  silicon/2
+  titanium/1
+  copper/1
+  lead/1
+  metaglass/1
+  silicon/3
 ]
 category: distribution
 speed: 0.10
