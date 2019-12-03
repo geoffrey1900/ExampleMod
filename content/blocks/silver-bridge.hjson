@@ -1,0 +1,11 @@
+name: Silver Bridging
+type: Floor
+variants: 0
+category: effect
+requirements: [
+  silver/50
+  silicon/60
+  graphite/25
+]
+destructible: true
+alwaysReplace: true
