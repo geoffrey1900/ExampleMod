@@ -2,9 +2,9 @@ type: ArmoredConveyor
 name: Armored Floating conveyor
 description: The ironclad conveyors!
 requirements: [
-  titanium/1
-  copper/3
-  metaglass/1
+  thorium/1
+  plastanium/1
+  metaglass/2
   silicon/3
 ]
 category: distribution
