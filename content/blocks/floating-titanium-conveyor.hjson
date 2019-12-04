@@ -1,5 +1,5 @@
 type: Conveyor
-name: Floating conveyor
+name: Floating titanium conveyor
 description: Now with air bags!
 requirements: [
   titanium/1
