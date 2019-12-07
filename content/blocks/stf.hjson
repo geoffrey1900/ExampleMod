@@ -1,0 +1,13 @@
+type: ItemSource
+name: Stuff
+description: its free realestate.
+size: 1
+solid: false
+healtj: 99999999
+requirements: [
+  copper/1
+]
+category: crafting
+research: conveyor
+idleSound: respawning
+idleSoundVolume: 0.5
