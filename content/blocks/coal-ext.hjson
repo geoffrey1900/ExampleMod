@@ -1,8 +1,8 @@
 type: GenericSmelter
-name: Diamond Press
-description: Compresses coal int diamonds.
+name: Coal former
+description: makes lots of coal from copper and water.
 liquidCapacity: 50
-size: 3
+size: 1
 hasPower: true
 hasLiquids: true
 hasItems: true
