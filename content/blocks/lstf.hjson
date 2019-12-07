@@ -1,0 +1,13 @@
+type: LiquidSource
+name: Liquid stuff
+description: its free ocean estate.
+liquidCapacity: 1000
+size: 1
+updateEffect: smeltsmoke
+requirements: [
+  copper/1
+]
+category: crafting
+research: stf
+idleSound: respawning
+idleSoundVolume: 0.5
