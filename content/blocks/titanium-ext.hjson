@@ -1,0 +1,33 @@
+type: GenericSmelter
+name: Titanium former
+description: Makes titanium from lots of lead and water.
+liquidCapacity: 50
+size: 3
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 15
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      lead/3
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 1.2
+  }
+}
+requirements: [
+  lead/30
+  silicon/60
+  silver/35
+  titanium/25
+]
+category: crafting
+research: silicon-smelter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: titanium/1
