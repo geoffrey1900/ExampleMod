@@ -1,0 +1,38 @@
+type: Separator
+name: Stuff but more
+description: takes water and ouputs anything in the game!
+liquidCapacity: 1000
+size: 1
+craftTime: 0
+updateEffect: smeltsmoke
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.1
+  }
+results: [
+  copper/1
+  lead/1
+  graphite/1
+  silicon/1
+  metaglass/1
+  sand/1
+  coal/1
+  titanium/1
+  plastanium/1
+  pyrite/1
+  blast-compound/1
+  thorium/1
+  surge-aloy/1
+  silver/1
+  gold_powder/1
+  electrum/1
+  diamond/1
+]
+requirements: [
+  copper/1
+]
+category: crafting
+research: stf
+idleSound: respawning
+idleSoundVolume: 0.5
