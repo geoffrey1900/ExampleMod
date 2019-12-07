@@ -2,7 +2,7 @@ type: GenericSmelter
 name: Titanium former
 description: Makes titanium from lots of lead and water.
 liquidCapacity: 50
-size: 3
+size: 2
 hasPower: true
 hasLiquids: true
 hasItems: true
@@ -27,7 +27,7 @@ requirements: [
   titanium/25
 ]
 category: crafting
-research: silicon-smelter
+research: coal-ext
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: titanium/1
