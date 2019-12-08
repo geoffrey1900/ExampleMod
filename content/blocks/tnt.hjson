@@ -10,14 +10,14 @@ updateEffect: smeltsmoke
 consumes: {
   items: {
     items: [
-      coal/0
+      coal/1
     ]
   }
 }
 requirements: [
   lead/3
 ]
-explosionRadius: 100
+explosionRadius: 69
 explosionDamage: 2000
 coolantPower: 0.1
 category: crafting
