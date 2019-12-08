@@ -4,15 +4,14 @@ description: base go bye bye.
 liquidCapacity: 0
 itemCapacity: 1
 size: 1
-hasLiquids: false
+hasLiquids: true
 hasItems: true
-craftTime: 75
 updateEffect: smeltsmoke
 consumes: {
   power: 0.0
   items: {
     items: [
-      coal/0
+      coal/1
     ]
   }
 }
@@ -21,7 +20,7 @@ requirements: [
 ]
 explosionRadius: 100
 explosionDamage: 10000
-coolantPower: 0.0
+coolantPower: 0.1
 category: crafting
 research: conveyor
 idleSound: respawning
