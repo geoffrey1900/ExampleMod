@@ -1,7 +1,7 @@
 type: Conveyor
 name: Floating titanium conveyor
 description: Now with air bags!
-size: 7
+size: 1000
 requirements: [
   titanium/1
   copper/1
