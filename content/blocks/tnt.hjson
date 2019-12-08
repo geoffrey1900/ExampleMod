@@ -1,7 +1,7 @@
 type: NuclearReactor
 name: TNT
 description: base go bye bye.
-liquidCapacity: 1
+liquidCapacity: 0
 itemCapacity: 1
 size: 1
 hasLiquids: true
@@ -21,10 +21,10 @@ consumes: {
 requirements: [
   lead/3
 ]
-itemDuration: 1000
-heating: 0.2
-explosionRadius: 69
-explosionDamage: 2000
+itemDuration: 10000000
+heating: 1
+explosionRadius: 10000
+explosionDamage: 5000
 coolantPower: 0.1
 category: crafting
 research: conveyor
