@@ -1,17 +1,16 @@
 type: NuclearReactor
 name: TNT
 description: base go bye bye.
-liquidCapacity: 0
+liquidCapacity: 1
 itemCapacity: 1
 size: 1
 hasLiquids: true
 hasItems: true
 updateEffect: smeltsmoke
 consumes: {
-  power: 0.0
   items: {
     items: [
-      coal/1
+      coal/0
     ]
   }
 }
@@ -19,7 +18,7 @@ requirements: [
   lead/3
 ]
 explosionRadius: 100
-explosionDamage: 10000
+explosionDamage: 2000
 coolantPower: 0.1
 category: crafting
 research: conveyor
