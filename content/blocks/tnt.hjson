@@ -14,13 +14,15 @@ consumes: {
     ]
   }
   liquid: {
-    liquid: cryofluid
-    amount: 100
+    liquid: water
+    amount: 100000
   }
 }
 requirements: [
   lead/3
 ]
+itemDuration: 1000
+heating: 0.2
 explosionRadius: 69
 explosionDamage: 2000
 coolantPower: 0.1
