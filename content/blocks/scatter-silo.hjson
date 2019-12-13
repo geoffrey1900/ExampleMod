@@ -1,4 +1,4 @@
-localizedName: "Scatter Silo" 
+Name: "Scatter Silo" 
 description: "A player-activatable block that scatters bullets everywhere upon use."
 
 category: turret
@@ -12,4 +12,4 @@ configurable: true
 requirements: [ graphite/75
                 titanium/30 ]
 
-consumes: { items: { items: [ scrap/10 ] } }
+consumes: { items: [ scrap/10 ] }
