@@ -26,15 +26,15 @@ const silo = extendContent(Block, "spinner", {
             else {
                 cd = 60;
                 tile.entity.health -= 5;
-                Effects.effect(siloLaunchEffect, tile);
+                Effects.effect(spinnerLaunchEffect, tile);
                 for (var i = 0; i < 12; i++) {
                 Calls.createBullet(
                     Bullets.flakExplosive, 
                     tile.getTeam(), 
                     tile.drawx(), 
                     tile.drawy(), 
-                    Mathf.random(12, -12) + (tile.entity.rotation * 90), 
-                    Mathf.random(0.5, 1.0), 
+                    Mathf.random(12, -12)// + (tile.entity.rotation * 90), 
+                    ,Mathf.random(0.5, 1.0), 
                     Mathf.random(0.2, 1.0)
                 );
             };
