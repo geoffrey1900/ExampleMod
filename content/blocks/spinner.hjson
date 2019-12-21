@@ -1,5 +1,5 @@
 localizedName: "Spinner" 
-description: "A player-activatable block that scatters bullets everywhere upon use."
+description: "Automaticly sprays bullets in the direction its facing but breaks itself in the process"
 category: turret
 size: 1
 update: true
