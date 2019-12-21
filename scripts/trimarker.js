@@ -14,6 +14,7 @@ const spinnerLaunchEffect = newEffect(50, e => {
 
 var cd = 60;
 var lvl = 1;
+var cd = 60
 var dir = 0;
 const spinner = extendContent(Block, "spinner", {
     update(tile) {
