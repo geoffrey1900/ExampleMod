@@ -17,15 +17,13 @@ var lvl = 1;
 var cd = 60;
 const silo = extendContent(Block, "spinner", {
     update(tile) {
-        //when health is lower than max health
-        if (1 < 2) {
             //cooldown of 60 ticks
             if (cd > 0) {
                 cd--;
             }
             else {
                 cd = 60;
-                tile.entity.health -= 5;
+                tile.entity.health += 5;
                 Effects.effect(spinnerLaunchEffect, tile);
                 for (var i = 0; i < 12; i++) {
                 Calls.createBullet(
@@ -33,12 +31,10 @@ const silo = extendContent(Block, "spinner", {
                     tile.getTeam(), 
                     tile.drawx(), 
                     tile.drawy(), 
-                    Mathf.random(12, -12)// + (tile.entity.rotation * 90), 
+                    Mathf.random(360)// + (tile.entity.rotation * 90), 
                     ,Mathf.random(0.5, 1.0), 
                     Mathf.random(0.2, 1.0)
-                );
+                )};
             };
-            }
-        }
     }
 })
