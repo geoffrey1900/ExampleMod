@@ -15,7 +15,7 @@ const spinnerLaunchEffect = newEffect(50, e => {
 var cd = 60;
 var lvl = 1;
 var cd = 60;
-const silo = extendContent(Block, "spinner", {
+const spinner = extendContent(Block, "spinner", {
     update(tile) {
             //cooldown of 60 ticks
             if (cd > 0) {
