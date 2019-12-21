@@ -42,6 +42,6 @@ const spinner = extendContent(Block, "spinner", {
         table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => tile.configure(0))).size(40);
     },
     configured(tile, value) {
-    dir += 45
+    dir += 10
     }
 })
