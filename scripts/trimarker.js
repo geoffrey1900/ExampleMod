@@ -23,7 +23,7 @@ const spinner = extendContent(Block, "spinner", {
             }
             else {
                 cd = 60;
-                tile.entity.health += 5;
+                tile.entity.health -= 10;
                 Effects.effect(spinnerLaunchEffect, tile);
                 for (var i = 0; i < 12; i++) {
                 Calls.createBullet(
@@ -31,8 +31,8 @@ const spinner = extendContent(Block, "spinner", {
                     tile.getTeam(), 
                     tile.drawx(), 
                     tile.drawy(), 
-                    Mathf.random(360)// + (tile.entity.rotation * 90), 
-                    ,Mathf.random(0.5, 1.0), 
+                    Mathf.random(-12, 12) + (tile.entity.rotation * 90), 
+                    Mathf.random(0.5, 1.0), 
                     Mathf.random(0.2, 1.0)
                 )};
             };
