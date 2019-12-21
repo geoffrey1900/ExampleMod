@@ -31,7 +31,7 @@ const spinner = extendContent(Block, "spinner", {
                     tile.getTeam(), 
                     tile.drawx(), 
                     tile.drawy(), 
-                    Mathf.random(-12, 12) + (tile.entity.rotation * 90), 
+                    i*90, 
                     Mathf.random(0.5, 1.0), 
                     Mathf.random(0.2, 1.0)
                 )};
