@@ -1,8 +1,8 @@
 var tile_instance_sp = {};
 
-const siloLaunchEffect = newEffect(50, e => {
-    var i = 3;
-    Draw.color(Color.white, Color.red, e.fin());
+const spinnerLaunchEffect = newEffect(50, e => {
+    var i = 4;
+    Draw.color(Color.red, Color.cyan, e.fin());
     Lines.stroke(e.fout() * 5);
     var key = e.x + "," + e.y;
     if(tile_instance_sp[key] === undefined){
@@ -25,8 +25,19 @@ const silo = extendContent(Block, "spinner", {
             }
             else {
                 cd = 60;
-                tile.entity.health += 5;
+                tile.entity.health -= 5;
                 Effects.effect(siloLaunchEffect, tile);
+                for (var i = 0; i < 12; i++) {
+                Calls.createBullet(
+                    Bullets.flakExplosive, 
+                    tile.getTeam(), 
+                    tile.drawx(), 
+                    tile.drawy(), 
+                    Mathf.random(12, -12) + (tile.entity.rotation * 90), 
+                    Mathf.random(0.5, 1.0), 
+                    Mathf.random(0.2, 1.0)
+                );
+            };
             }
         }
     }
