@@ -14,7 +14,7 @@ const spinnerLaunchEffect = newEffect(50, e => {
 
 var cd = 60;
 var lvl = 1;
-var cd = 60;
+var dir = 0;
 const spinner = extendContent(Block, "spinner", {
     update(tile) {
             //cooldown of 60 ticks
@@ -31,10 +31,19 @@ const spinner = extendContent(Block, "spinner", {
                     tile.getTeam(), 
                     tile.drawx(), 
                     tile.drawy(), 
-                    i*90, 
+                    dir, 
                     Mathf.random(0.5, 1.0), 
                     Mathf.random(0.2, 1.0)
                 )};
             };
+    }
+    buildConfiguration(tile, table) {
+        table.addImageButton(Icon.arrowUpSmall, Styles.clearTransi, run(() => tile.configure(0))).size(20);
+        table.addImageButton(Icon.arrowDownSmall, Styles.clearTransi, run(() => tile.configure(1))).size(20);
+        table.addImageButton(Icon.arrowLeftSmall, Styles.clearTransi, run(() => tile.configure(2))).size(20);
+        table.addImageButton(Icon.arrowRightSmall, Styles.clearTransi, run(() => tile.configure(3))).size(20);
+    },
+    configured(tile, value) {
+    dir = value*90
     }
 })
