@@ -1,0 +1,9 @@
+localizedName: "Spinner" 
+description: "A player-activatable block that scatters bullets everywhere upon use."
+category: turret
+size: 1
+update: true
+solid: true
+rotate: true
+requirements: [ "graphite/75"
+                "titanium/30" ]
