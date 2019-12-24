@@ -3,7 +3,7 @@ name: Stuff
 description: its free realestate.
 size: 1
 solid: false
-healtj: 99999999
+health: 99999999
 requirements: [
   copper/1
 ]
