@@ -4,7 +4,6 @@ type: Wall
 health: 500
 size: 1
 radius: 18
-hasItems: false
 breakage: 785
 requirements: [
   titanium/12
