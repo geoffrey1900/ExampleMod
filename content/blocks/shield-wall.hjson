@@ -1,6 +1,6 @@
 name: Shielded Wall
 description: A wall with a built-in shield.
-type: Wall
+type: ForceProjector
 health: 500
 size: 1
 radius: 18
