@@ -1,0 +1,31 @@
+type: PowerTurret
+name: Tractor Beam but its gay
+description: thingjdkdnkd
+size: 2 
+shootType: {
+            "type": "BasicBulletType",
+            "speed": 5,
+            "damage": 60,
+            "bulletWidth": 16,
+            "bulletHeight": 24,
+            "shootEffect": "shootSmall",
+            "hitSound": "flame",
+            "ammoMultiplier": 3,
+            "homingPower": 0.001,
+            "homingRange": 5,
+            "knockback": 0.1,
+            "hitShake": 1,
+            "recoil": 750,
+            "incendAmount": 10,
+            "bulletSprite": "vbucks-fried-egg",
+            "frontColor": "#ffffff"
+        }
+range: 96
+requirements: [
+  thorium/1
+  plastanium/1
+  metaglass/2
+  silicon/3
+]
+category: turret
+research: arc
