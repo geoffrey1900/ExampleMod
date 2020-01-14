@@ -2,7 +2,7 @@ type: PowerTurret
 name: Tractor Beam
 description: thingjdkdnkd
 size: 2 
-shootType:? {
+shootType: {
     "type": "TracBulletType",
     "lifetime": 1000,
     "speed": 5,
