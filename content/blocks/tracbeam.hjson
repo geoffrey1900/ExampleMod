@@ -1,5 +1,20 @@
-{
-  type: PowerTurret
-  name: Tractor Beam
-  discription: thingjdkdnkd
+type: PowerTurret
+name: Tractor Beam
+description: thingjdkdnkd
+size: 2 
+shootType:? {
+    "type": "TracBulletType",
+    "lifetime": 1000,
+    "speed": 5,
+    "frontColor": "ffff00",
+    "backColor": "00ffff",
+    ”knockback”: -0.2
 }
+requirements: [
+  thorium/1
+  plastanium/1
+  metaglass/2
+  silicon/3
+]
+category: distribution
+research: titanium-conveyor
