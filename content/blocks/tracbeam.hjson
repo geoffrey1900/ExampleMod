@@ -3,7 +3,6 @@ name: Tractor Beam
 description: thingjdkdnkd
 size: 2 
 shootType: {
-    "type": "TracBulletType",
     "lifetime": 1000,
     "speed": 5,
     "frontColor": "ffff00",
