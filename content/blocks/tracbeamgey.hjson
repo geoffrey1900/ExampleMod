@@ -20,6 +20,7 @@ shootType: {
             "bulletSprite": "vbucks-fried-egg",
             "frontColor": "#ffffff"
         }
+reload: 1
 range: 96
 requirements: [
   thorium/1
