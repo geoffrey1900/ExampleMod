@@ -3,12 +3,14 @@ name: Tractor Beam
 description: thingjdkdnkd
 size: 2 
 shootType: {
-    ”damage”: 0,
+    "damage": -1,
     "lifetime": 1000,
     "speed": 5,
     "frontColor": "ffff00",
     "backColor": "00ffff",
-    ”knockback”: -5
+    "knockback": 1,
+    "drag": 0.0001
+    
 }
 range: 96
 requirements: [
