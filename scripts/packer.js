@@ -7,7 +7,7 @@ function convert(entity) {
 }
 const overflow = Vars.content.getByName(ContentType.block, 'overflow-gate');
  
-const invertedOverflowGate = extendContent(OverflowGate, "inverted-overflow-gate", {
+const invertedOverflowGate = extendContent(OverflowGate, "packer", {
 	
 	// copy of the original method, modified to use the centralized dictionary
     removeStack(tile, item, amount){
