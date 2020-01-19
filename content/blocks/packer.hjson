@@ -1,0 +1,7 @@
+name: Packer
+description: Packs items into nanofiber packages
+size: 1
+requirements: [
+  copper/1
+]
+category: units
