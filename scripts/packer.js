@@ -75,9 +75,9 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
                     output = ent[1]
             }*/
             if (item = Vars.content.item(0)) {
-                output = Vars.content.getByType(ContentType.items,  "ExampleMod-packedCopper")
+                output = Vars.content.getByName(ContentType.items,  "ExampleMod-packedCopper")
             } else if (item === Vars.content.item(1)) {
-                output = Vars.content.getByType(ContentType.items,  "ExampleMod-packedLead")
+                output = Vars.content.getByName(ContentType.items,  "ExampleMod-packedLead")
             }
             target.block().handleItem(output, target, tile);
             entity.items.remove(entity.lastItem, 1);
