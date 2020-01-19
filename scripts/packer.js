@@ -65,7 +65,7 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
         if(entity.lastItem !== null && entity.time >= 1){
             var target = getTargetAndFlip(tile, entity.lastItem, entity.lastInput);
             if (target === null) return;
-            var output = null
+            var output = entity.lastItem
             var converts = [
                 [Vars.content.item(0), Vars.content.getByType(ContentType.items, "ExampleMod-packedCopper")]
                 [Vars.content.item(1), Vars.content.getByType(ContentType.items, "ExampleMod-packedLead")]
