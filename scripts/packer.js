@@ -70,9 +70,14 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
                 [Vars.content.item(0), Vars.content.getByType(ContentType.items, "ExampleMod-packedCopper")]
                 [Vars.content.item(1), Vars.content.getByType(ContentType.items, "ExampleMod-packedLead")]
             ]
-            converts.forEach(ent) => {
+            /*converts.forEach(ent) => {
                 if (ent[0] === entity.lastItem)
                     output = ent[1]
+            }*/
+            if (item = Vars.content.item(0)) {
+                output = Vars.content.getByType(ContentType.items,  "ExampleMod-packedCopper")
+            } else if (item === Vars.content.item(1)) {
+                output = Vars.content.getByType(ContentType.items,  "ExampleMod-packedLead")
             }
             target.block().handleItem(output, target, tile);
             entity.items.remove(entity.lastItem, 1);
