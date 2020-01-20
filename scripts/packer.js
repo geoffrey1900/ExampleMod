@@ -75,9 +75,9 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
                     output = ent[1]
             }*/
             if (item = Items.copper) {
-                output = Vars.content.getByName(ContentType.item,  "ExampleMod-packedCopper")
+                output = Items.graphite//Vars.content.getByName(ContentType.item,  "ExampleMod-packedCopper")
             } else if (item === Items.lead) {
-                output = Vars.content.getByName(ContentType.item,  "ExampleMod-packedLead")
+                output = Items.plastanium//Vars.content.getByName(ContentType.item,  "ExampleMod-packedLead")
             }
             //output = Items.blastCompound //Vars.content.item(15)
             target.block().handleItem(output, target, tile);
