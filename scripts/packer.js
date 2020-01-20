@@ -80,7 +80,7 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
                 output = Items.plastanium//Vars.content.getByName(ContentType.item,  "ExampleMod-packedLead")
             }
             //output = Items.blastCompound //Vars.content.item(15)
-            if (!output) output = entity.lastItem
+            /*if (!output)*/ output = entity.lastItem
             target.block().handleItem(output, target, tile);
             entity.items.remove(entity.lastItem, 1);
             entity.lastItem = null;
