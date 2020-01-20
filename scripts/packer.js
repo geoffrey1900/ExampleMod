@@ -65,23 +65,23 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
         if(entity.lastItem !== null && entity.time >= 1){
             var target = getTargetAndFlip(tile, entity.lastItem, entity.lastInput);
             if (target === null) return;
-            var output = Items.blastCompound
+            var itemo = Items.blastCompound
             /*var converts = [
                 [Vars.content.item(0), Vars.content.getByName(ContentType.items, "ExampleMod-packedCopper")]
                 [Vars.content.item(1), Vars.content.getByName(ContentType.items, "ExampleMod-packedLead")]
             ]
             converts.forEach(ent) => {
                 if (ent[0] === entity.lastItem)
-                    output = ent[1]
+                    itemo = ent[1]
             }*/
             if (entity.lastItem === Items.copper) {
-                output = Items.coal//Vars.content.getByName(ContentType.item,  "ExampleMod-packedCopper")
+                itemo = Items.coal//Vars.content.getByName(ContentType.item,  "ExampleMod-packedCopper")
             } else if (entity.lastItem === Items.lead) {
-                output = Items.plastanium//Vars.content.getByName(ContentType.item,  "ExampleMod-packedLead")
+                itemo = Items.plastanium//Vars.content.getByName(ContentType.item,  "ExampleMod-packedLead")
             }
             //output = Items.blastCompound //Vars.content.item(15)
-            //if (!output) output = Items.blastCompound
-            target.block().handleItem(output, target, tile);
+            //if (!itemo) itemo = Items.blastCompound
+            target.block().handleItem(itemo, target, tile);
             entity.items.remove(entity.lastItem, 1);
             entity.lastItem = null;
         }
