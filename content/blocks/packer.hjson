@@ -3,6 +3,6 @@ description: Packs items into nanofiber packages
 requirements: [
   copper/1
 ]
-ategory: distribution
+category: distribution
 solid: true
 hasItems: true
