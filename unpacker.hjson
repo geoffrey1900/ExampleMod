@@ -1,0 +1,8 @@
+name: Upacker
+description: Rips items from their nanofiber packages
+requirements: [
+  copper/1
+]
+category: distribution
+solid: true
+hasItems: true
