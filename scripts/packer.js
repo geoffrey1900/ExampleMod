@@ -63,7 +63,7 @@ const packer = extendContent(OverflowGate, "packer", {
 		
 		entity.time += 1 / overflow.speed * Time.delta();
 		
-        if(entity.lastItem !== null && entity.time >= 1){
+        if(entity.lastItem !== null && entity.time >= 1 && ){
             var target = getTargetAndFlip(tile, entity.lastItem, entity.lastInput);
             if (target === null) return;
             var itemo = Items.blastCompound
