@@ -7,7 +7,7 @@ function convert(entity) {
 }
 const overflow = Vars.content.getByName(ContentType.block, 'overflow-gate');
  
-const invertedOverflowGate = extendContent(OverflowGate, "packer", {
+const packer = extendContent(OverflowGate, "packer", {
 	
 	// copy of the original method, modified to use the centralized dictionary
     removeStack(tile, item, amount){
@@ -23,13 +23,14 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
     acceptItem(item, tile, source){
         var entity = convert(tile.ent());
  
-        return tile.getTeam() == source.getTeam() && entity.lastItem === null && entity.items.total() == 0;
+        return tile.getTeam() == source.getTeam() && entity.lastItem === null && entity.items.total() <= 5 && (entity.itemType == item || !entity.itemtype);
     },
 	
 	// copy of the original method, modified to use the centralized dictionary
     handleItem(item, tile, source){
         var entity = convert(tile.ent());
         entity.items.add(item, 1);
+        if (entity.itemType === null) entity.itemType = item
         entity.lastItem = item;
         entity.time = 0;
         entity.lastInput = source;
@@ -82,8 +83,9 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
             //output = Items.blastCompound //Vars.content.item(15)
             //if (!itemo) itemo = Items.blastCompound
             target.block().handleItem(itemo, target, tile);
-            entity.items.remove(entity.lastItem, 1);
+            entity.items.remove(entity.lastItem, 5);
             entity.lastItem = null;
+            entity.itemType= null;
         }
     }
 })
