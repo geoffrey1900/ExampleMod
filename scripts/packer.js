@@ -74,9 +74,9 @@ const invertedOverflowGate = extendContent(OverflowGate, "packer", {
                 if (ent[0] === entity.lastItem)
                     output = ent[1]
             }*/
-            if (item === Items.copper) {
+            if (entity.lastItem === Items.copper) {
                 output = Items.coal//Vars.content.getByName(ContentType.item,  "ExampleMod-packedCopper")
-            } else if (item === Items.lead) {
+            } else if (entity.lastItem === Items.lead) {
                 output = Items.plastanium//Vars.content.getByName(ContentType.item,  "ExampleMod-packedLead")
             }
             //output = Items.blastCompound //Vars.content.item(15)
