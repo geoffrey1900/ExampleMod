@@ -1,3 +1,3 @@
 # Garbage Can
 
-This is the definition on retarded
+This is the definition of retarded
